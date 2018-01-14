@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: ecommerce-category-service
+    
+server:
+  port: ${PORT:8083}
+  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+      
+  eureka:
+    instance:
+      statusPageUrlPath: /info
+      healthCheckUrlPath: /health
